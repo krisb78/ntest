@@ -27,10 +27,10 @@ library you like.
 
 ## Influences
 
-Ryan Tomayko's test lib for bert: 
+Ryan Tomayko's test lib for bert:  
 http://github.com/rtomayko/node-bertrpc/blob/master/test/test.js
 
-Dan Webb and FreeRange's nodetest:
+Dan Webb and FreeRange's nodetest:  
 http://github.com/freerange/nodetest/blob/master/nodetest.js
 
 ## Copyright
