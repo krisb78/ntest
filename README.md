@@ -4,14 +4,16 @@ A little test framework I wrote to get a handle on this whole asynchronous
 javascript thing.  I don't really know what I'm doing here, other than trying
 to mold javascript to fit my tiny ruby brain.
 
-## Usage
+## Installation
 
 There's no packaging system for node.js yet, so I've just been creating symlinks
 in my `~/.node_libraries` path.
 
     $ ln -s /path/to/ntest/lib ~/.node_libraries/ntest
 
-Then, mix the library into GLOBAL and start defining tests. Use whatever asserts
+## Usage
+
+Mix the library into GLOBAL and start defining tests. Use whatever asserts
 library you like.
 
     process.mixin(GLOBAL, require('ntest'));
