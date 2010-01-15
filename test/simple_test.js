@@ -1,8 +1,13 @@
-var assert = require('assert')
+var assert = require('assert'), sys = require('sys')
 process.mixin(GLOBAL, require('../lib'))
 
 setup(function() {
+  sys.puts("SETUP")
   this.a = 1
+})
+
+teardown(function() {
+  assert.equal(1, this.a) // this should fail for test #2
 })
 
 test("assert equals", function() {
@@ -11,8 +16,4 @@ test("assert equals", function() {
 
 test("sample exception", function() {
   ++this.a;
-})
-
-teardown(function() {
-  assert.equal(1, this.a) // this should fail for test #2
 })

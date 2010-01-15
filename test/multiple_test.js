@@ -6,16 +6,16 @@ describe("test case #1:")
     this.a = 1
   })
 
+  after(function() {
+    assert.equal(1, this.a) // this should fail for test #2
+  })
+
   test("assert equals", function() {
     assert.equal(1, this.a)
   })
 
   test("sample exception", function() {
     ++this.a
-  })
-
-  after(function() {
-    assert.equal(1, this.a) // this should fail for test #2
   })
 
 describe("test case #2:")
@@ -23,14 +23,14 @@ describe("test case #2:")
     this.a = 1
   })
 
+  after(function() {
+    assert.equal(1, this.a) // this should fail for test #2
+  })
+
   test("assert equals", function() {
     assert.equal(1, this.a)
   })
 
   test("sample exception", function() {
     ++this.a
-  })
-
-  after(function() {
-    assert.equal(1, this.a) // this should fail for test #2
   })
