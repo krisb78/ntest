@@ -2,7 +2,6 @@ var assert = require('assert'), sys = require('sys')
 process.mixin(GLOBAL, require('../lib'))
 
 setup(function() {
-  sys.puts("SETUP")
   this.a = 1
 })
 
